@@ -6,7 +6,8 @@ const ContactList = ({ phonebook }) => {
         <li className={s.item} key={contact.id}>
           <Contact
             name={contact.name}
-            number={contact.number}            
+          number={contact.number}
+          textBtn='Delete'
           />
         </li>
       ))}

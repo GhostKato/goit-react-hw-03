@@ -1,10 +1,12 @@
 import s from './SearchBox.module.css';
 const SearchBox = ({ text }) => {
   return (
-    <label className={s.label}>
+    <div className={s.container}>
+    <label className={s.label} htmlFor='username'>
       {text}
-      <input className={s.input} />
-    </label>
+      </label>
+      <input className={s.input} id='usernumber'/>
+    </div>
   )
 }
 export default SearchBox

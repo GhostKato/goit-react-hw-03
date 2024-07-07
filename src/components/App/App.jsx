@@ -6,12 +6,12 @@ import phonebook from '../../assets/phonebook.json';
 
 function App() {
   return (
-    <>      
+    <div className={s.container}>      
       <h1 className={s.title}>Phonebook</h1>     
       <ContactForm nameText='Name' numberText='Number' btnText='Add contact' />
       <SearchBox text='Find contacts by name'/>
       <ContactList phonebook={phonebook} />
-    </>
+    </div>
   );
 }
 

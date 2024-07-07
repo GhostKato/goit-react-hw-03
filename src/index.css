@@ -1,5 +1,6 @@
 :root {
   font-family: "Neuton", serif;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -7,6 +8,19 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-one: #1e2023;
+  --color-two: #2a2d32;
+  --color-green: #14c57c;
+  --color-white: #f0f0f0;
+  --color-button-hover: #009156;
+  --box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  --text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--color-one);
+  color: var(--color-white);
 }
 
 /* Reset styles */
