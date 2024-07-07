@@ -1,6 +1,9 @@
 import s from './Contact.module.css';
 
-const Contact = () => {
-  return <li className={s.item}></li>
+const Contact = ({name, number}) => {
+  return <>    
+    <p className={s.name}>{name}</p>
+      <p className={s.number}>{number}</p>
+  </>
 }
 export default Contact
