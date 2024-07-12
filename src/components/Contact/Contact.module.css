@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  &:hover {
+    transform: scale(102%);
+  }
   &:hover .name {
     color: var(--color-button-hover);
   }
@@ -31,9 +34,6 @@
 .name {
   text-shadow: var(--text-shadow);
   transition: color 0.3s ease;
-}
-
-.number {
 }
 
 .btn {

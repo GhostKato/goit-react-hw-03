@@ -4,6 +4,11 @@
 }
 
 .label {
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
   text-shadow: var(--text-shadow);
 }
 

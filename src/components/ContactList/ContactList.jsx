@@ -1,4 +1,3 @@
-import React from 'react';
 import Contact from '../Contact/Contact';
 import s from './ContactList.module.css';
 
@@ -10,8 +9,7 @@ const ContactList = ({ contacts, deleteContact }) => {
           <Contact
             deleteContact={() => deleteContact(contact.id)}
             name={contact.name}
-            number={contact.number}
-            textBtn='Delete'
+            number={contact.number}            
           />
         </li>
       ))}
