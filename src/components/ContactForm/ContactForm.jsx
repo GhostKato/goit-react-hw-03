@@ -8,13 +8,13 @@ const ContactForm = ({ addContact }) => {
     name: Yup.string()
       .required('This field is required!')
       .min(3, 'Name must be more than 3 characters!')
-      .max(50, 'Name must be less than 50 chars!')
-      .matches(/^[a-zA-Z]+$/, 'Must be only chars!'),
+      .max(50, 'Name must be less than 50 characters!'),
+      
     
-    number: Yup.number()
+    number: Yup.string()
       .required('This field is required!')
       .min(3, 'Number must be more than 3 characters!')
-      .max(50, 'Number must be less than 50 chars!'),    
+      .max(50, 'Number must be less than 50 characters!'),    
   });
 
   const initialValues = {    
