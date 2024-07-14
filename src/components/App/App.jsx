@@ -24,7 +24,8 @@ function App() {
   };
 
   const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(searchQuery)
+    contact.name.toLowerCase().includes(searchQuery) || 
+    contact.number.includes(searchQuery)
   );
 
   const addContact = (name, number) => {
